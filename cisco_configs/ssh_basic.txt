@@ -1,0 +1,22 @@
+### basic ssh config to get going
+hostname xxxxx
+
+ip domain-name xxxxx
+
+aaa new-model
+
+
+username xxxx priv 15 password 0 xxxx
+
+
+crypto key generate rsa 2048
+ip ssh time-out 60
+ip ssh authentication-retries 2
+
+
+line vty 0 4
+transport input ssh
+
+aaa new-model
+aaa authentication login default local 
+aaa authorization exec default local
