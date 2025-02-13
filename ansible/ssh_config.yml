@@ -1,0 +1,33 @@
+---
+-
+ name: Cisco SSH Basic Play  ### SSH will need to be configured already, this is just an example for practice. 
+ hosts: all
+ gather_facts: no
+ 
+ tasks: 
+ 
+   - name: Generate Backup Configs   ### create a backup first before changes
+     cisco.ios.ios_config:
+       backup: yes
+       backup_options: 
+         dir_path: /home/sergio/Desktop/Ansible/Backups
+         filename: "{{inventory_hostname}}-backup.config"
+         
+   - name: Configure SSH
+     cisco.ios.ios_config:
+       lines: 
+         - hostname {{ inventory_hostname }} 
+         - ip domain-name serg-lab.com
+         - username cisco priv 15 password 0 cisco
+         - crypto key generate rsa 2048
+         - ip ssh time-out 60
+         - ip ssh authentication-retries 2
+         - aaa new-model
+         - aaa authentication login default local 
+         - aaa authorization exec default local
+
+   - name: Configure interface settings
+     cisco.ios.ios_config:
+       lines:
+         - transport input ssh
+     parents: line vty 0 4     
