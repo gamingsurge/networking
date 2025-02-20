@@ -1,2 +1,22 @@
+3.2a Configure simple OSPFv2/v3 environments, including multiple normal areas,
+summarization, and filtering (neighbor adjacency, point-to-point, and broadcast
+network types, and passive-interface)
+
+
 OSPF ( open shortest path first) Notes
+
+Broadcast | Non Broadcast use DR\BDR
+
+LSA Types: 
+1 Router LSA
+2 Network LSA
+3 Summary LSA
+4 ASBR summary LSA
+5 Autonomous system LSA
+
+OSPF Cost is calculated with the reference bandwidth over interface bandwidth
+usually is 100 Mbps as default.
+You can change the cost of an interface as well. 
+
+
 
