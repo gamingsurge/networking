@@ -1,0 +1,210 @@
+Week 1: Network Fundamentals
+
+Day 1: Introduction & Exam Overview
+• Overview of the CCNP ENCOR exam and its objectives
+• Understanding the exam blueprint and core topics
+
+Day 2: OSI and TCP/IP Models
+• Study the layers of the OSI model and TCP/IP model
+• Understand how data flows across the layers
+
+Day 3: Network Devices and Roles
+• Learn about routers, switches, firewalls, and their functions
+• Study basic network device configurations
+
+Day 4: Ethernet Technologies (802.3)
+• Study Ethernet standards and frames
+• Learn about cabling and network topologies
+
+Day 5: VLANs and STP
+• Study VLAN concepts and how to configure them
+• Understand Spanning Tree Protocol (STP) operation
+
+Day 6: Hands-on with VLAN and STP
+• Create VLANs on switches, configure trunking, and STP
+• Practice with Packet Tracer or real devices
+
+Day 7: Review & Practice
+• Review key concepts from the week
+• Take a practice quiz on OSI model, VLANs, and STP
+Week 2: Routing Technologies
+
+Day 8: Static Routing Basics
+• Study static routing concepts and configuration
+
+Day 9: Dynamic Routing (RIP & EIGRP)
+• Learn RIP and EIGRP routing protocols
+• Configure and verify EIGRP and RIP
+
+Day 10: OSPF Basics
+• Understand OSPF fundamentals, areas, and LSAs
+• Configure OSPF on routers
+
+Day 11: Routing Table and Troubleshooting
+• Learn how to troubleshoot routing issues
+• Use show and debug commands to troubleshoot routing
+
+Day 12: Advanced OSPF Concepts
+• Study OSPF authentication, route summarization, and redistribution
+
+Day 13: BGP Basics
+• Understand BGP concepts and its role in the internet
+• Learn about BGP attributes and path selection
+
+Day 14: Hands-on Routing Labs
+• Configure and troubleshoot RIP, OSPF, EIGRP, and BGP on routers
+• Verify routing table entries using appropriate commands
+Week 3: Switching Technologies
+
+Day 15: VLANs and Inter-VLAN Routing
+• Study VLAN creation, assignment, and Inter-VLAN routing
+• Configure a router-on-a-stick for Inter-VLAN routing
+
+Day 16: Spanning Tree Protocol (STP)
+• Learn about STP, Root Bridge, and blocking ports
+• Understand STP types (PVST, RPVST, MSTP)
+
+Day 17: EtherChannel & Link Aggregation
+• Study EtherChannel and how to configure it
+
+Day 18: Switch Security (Port Security, BPDU Guard)
+• Configure port security and BPDU Guard
+• Learn about security best practices
+
+Day 19: Hands-on Switching Labs
+• Configure VLANs, EtherChannel, and port security on switches
+• Test network connectivity and security measures
+
+Day 20: Troubleshooting Switching Issues
+• Troubleshoot common switching issues like VLAN misconfigurations and STP problems
+
+Day 21: Review & Practice
+• Review all switching concepts
+• Complete practice labs and quizzes
+Week 4: Wireless Technologies
+
+Day 22: WLAN Fundamentals
+• Learn about wireless technologies, standards (802.11), and types of access points (AP)
+
+Day 23: WLAN Design
+• Study WLAN deployment models and design considerations
+
+Day 24: Wireless Security
+• Learn about wireless security protocols (WPA2, WPA3, 802.1X)
+
+Day 25: Wireless Roaming
+• Understand the concepts of roaming in a WLAN environment
+
+Day 26: Hands-on Wireless Labs
+• Set up and configure wireless networks
+• Test connectivity and roaming between access points
+
+Day 27: Troubleshooting Wireless Issues
+• Troubleshoot common wireless network issues like signal interference and roaming problems
+
+Day 28: Review & Practice
+• Review WLAN concepts
+• Practice configuring and troubleshooting wireless networks
+Week 5: Security Technologies
+
+Day 29: VPN Technologies
+• Learn about VPN types (DMVPN, IPsec, GRE)
+• Understand the VPN tunneling process
+
+Day 30: ACLs (Access Control Lists)
+• Study ACL configuration and filtering techniques
+
+Day 31: Firewalls
+• Learn the role of firewalls in network security
+• Understand stateful vs. stateless firewalls
+
+Day 32: Secure Routing and Switching
+• Study how to secure routers and switches using best practices (SSH, AAA, etc.)
+
+Day 33: Wireless Security
+• Deep dive into WPA2, WPA3, and 802.1X authentication
+
+Day 34: Hands-on Security Labs
+• Configure VPNs, ACLs, and firewall rules on routers/switches
+• Secure devices using SSH and configure wireless security
+
+Day 35: Review & Practice
+• Review security concepts
+• Take a practice quiz on VPNs, ACLs, and firewall configurations
+Week 6: Automation and Programmability
+
+Day 36: Introduction to Network Automation
+• Learn what network automation is and why it’s important
+• Explore SDN (Software-Defined Networking)
+
+Day 37: Network Programmability (Python, REST APIs)
+• Introduction to network programmability using Python
+• Learn to interact with network devices using REST APIs
+
+Day 38: Automation Tools (Ansible, Cisco DNA Center)
+• Study popular network automation tools like Ansible and Cisco DNA Center
+
+Day 39: Hands-on with Automation Scripts
+• Practice writing simple Python scripts to automate network tasks
+• Configure automation tools to manage devices
+
+Day 40: Implement Automation in Labs
+• Use Cisco DNA Center or other tools to automate common networking tasks
+
+Day 41: Troubleshoot Automation Issues
+• Troubleshoot common issues in network automation and programmability
+
+Day 42: Review & Practice
+• Review network automation and programmability concepts
+• Complete automation practice labs
+Week 7: Advanced Routing and Troubleshooting
+
+Day 43: Advanced BGP
+• Learn about BGP advanced features like Route Reflectors, BGP attributes, and path selection
+
+Day 44: OSPF Advanced Design
+• Study advanced OSPF features like route summarization and redistribution
+
+Day 45: Troubleshooting Routing Issues
+• Practice troubleshooting BGP, OSPF, and EIGRP issues using commands like show ip route and debug
+
+Day 46: Troubleshooting Switching Issues
+• Learn advanced techniques for troubleshooting switching problems (VLAN, STP, EtherChannel)
+
+Day 47: Case Study & Scenario Practice
+• Work through real-world routing and switching troubleshooting scenarios
+
+Day 48: Review & Practice
+• Review advanced routing and switching topics
+• Take a practice exam on advanced routing and troubleshooting
+
+Day 49: Troubleshooting Lab
+• Perform a full troubleshooting lab on a complex network setup
+
+Day 50: Final Review
+• Review all major topics and concepts from the previous weeks
+Week 8: Final Preparation & Practice Exams
+
+Day 51: Review Weak Areas
+• Focus on weak areas identified during practice exams and quizzes
+
+Day 52: Full-Length Practice Exam
+• Take a full-length practice exam under timed conditions
+
+Day 53: Review Practice Exam Results
+• Analyze your practice exam results and focus on mistakes
+
+Day 54: Hands-on Lab Practice
+• Do hands-on labs covering all topics: routing, switching, security, automation
+
+Day 55: Final Review of Key Concepts
+• Go over the most difficult concepts and final troubleshooting scenarios
+
+Day 56: Exam Day Preparation
+• Review the exam format and tips for test-taking
+• Prepare mentally for the exam day
+Additional Tips:
+• Stay consistent with the schedule and adjust if needed, but aim to study 2-3 hours daily.
+• Focus on both theory and hands-on practice to reinforce your learning.
+• Use resources like Cisco’s official guides, study forums, and online labs for better understanding.
+• Get plenty of rest and manage stress leading up to the exam.
