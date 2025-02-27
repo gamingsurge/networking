@@ -1,0 +1,71 @@
+Encrypting an Ansible playbook with a password and using it in a `cronjob` involves a few key steps. First, you'll need to encrypt sensitive data in your playbook using Ansible Vault, and then create a cron job that can run the playbook securely by providing the password.
+
+Here’s a step-by-step guide:
+
+### 1. **Encrypt Your Playbook with Ansible Vault**
+
+Ansible Vault allows you to encrypt files (like your playbook or variable files) so that sensitive data can be safely stored and handled.
+
+To encrypt your playbook, run the following command:
+
+```bash
+ansible-vault encrypt <your_playbook.yml>
+```
+
+For example:
+
+```bash
+ansible-vault encrypt site.yml
+```
+
+You’ll be prompted to enter a password to encrypt the file. You can also use the `--vault-password-file` option to provide the password from a file.
+
+### 2. **Create a Vault Password File (Optional)**
+
+Instead of typing the password each time you run the playbook, you can store the password in a file and reference it in the cron job.
+
+Create a simple file to store the vault password, for example:
+
+```bash
+echo "your_vault_password" > /path/to/vault_password_file
+```
+
+Ensure the file has restricted permissions so that only the user running the cron job can read it:
+
+```bash
+chmod 600 /path/to/vault_password_file
+```
+
+### 3. **Write a Cron Job to Run the Encrypted Playbook**
+
+Now, you’ll need to create a cron job that will execute your encrypted playbook. You’ll need to specify the `--vault-password-file` option to provide the vault password file in the cron job.
+
+Here’s an example cron job:
+
+```bash
+crontab -e
+```
+
+Add a cron job entry like this (adjust the time as per your needs):
+
+```bash
+0 2 * * * ansible-playbook /path/to/encrypted_playbook.yml --vault-password-file /path/to/vault_password_file
+```
+
+This cron job will run the encrypted playbook at 2 AM every day, using the vault password file to decrypt it.
+
+### 4. **Testing**
+
+Before setting up the cron job, it’s a good idea to manually run the playbook to make sure everything works:
+
+```bash
+ansible-playbook /path/to/encrypted_playbook.yml --vault-password-file /path/to/vault_password_file
+```
+
+If everything works as expected, the cron job will work as intended.
+
+### 5. **Ensure Permissions and Security**
+
+Since the vault password file contains sensitive information, ensure that it is kept secure and only accessible to the user running the cron job. You can also consider using more advanced vault management options or integrating with external secrets management systems for added security.
+
+By following these steps, you will be able to securely encrypt your Ansible playbook and run it in a cron job without exposing the password each time.
