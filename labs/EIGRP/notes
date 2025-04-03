@@ -1,1 +1,28 @@
+EIGRP uses TCP 88
+EIGRP multicast 224.0.0.10
 
+config
+traditional
+
+router eigrp x
+network x.x.x.x
+
+config 
+named
+router eigrp name
+address-family ipv4 autonomous-system 100
+network 0.0.0.0
+end
+
+
+show commands:
+show ip eigrp neighbors
+show ip eigrp topology
+show ip eigrp topolgy all-links
+show ip eigrp topology x.x.x.x
+show ip eigrp interfaces
+show ip eigrp interfaces detail
+show ip eigrp traffic
+show ip route eigrp
+show ip protocols
+show ip eigrp events
