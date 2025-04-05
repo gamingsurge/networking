@@ -1,0 +1,12 @@
+Task 1:
+1. router ospf 1
+   network 0.0.0.0 area 0
+
+2.  Router ID are locally significant
+3. On P1R1 3 route exist
+4. AD cost of 110, use show ip protocols to show AD
+5.
+
+Task 2:
+1.
+2. The OSPF will pick a loopback IP if it is present
